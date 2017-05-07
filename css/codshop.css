@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     cursor: default;
+    font-family: calibri;
 }
 
 body{
@@ -11,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center top;
+    background-attachment: fixed;
 }
 
 #main-container{
@@ -26,20 +28,38 @@ body{
     right: 0;
 }
 
-header{
+header, footer{
     background: black;
-    background-image: url("../images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 100%;
+    color: white;
+}
+header{
     height: 129px;
-    padding-left: 459px;
+}
+header ul{
+    font-size: 2em;
+    padding-top: 70px;
+    list-style: none;
+}
+header a{
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+header a:hover, header a img:hover{
+    cursor: pointer;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
 }
 
 #content{
     padding: 20px;
 }
 
+/* Home page */
 .item{
     background-color: white;
     padding: 10px;
@@ -55,6 +75,7 @@ header{
 .item-name{
     font-size: 1.2em;
     display: inline;
+    height: 2.3em;
 }
 .item-price{
     margin-top: 0.2em;
@@ -66,11 +87,17 @@ header{
     margin-top: 5px;
     height: 6em;
     overflow-y: hidden;
+    clear: both;
+}
+.item-release, .item-more{
+    margin-top: 5px;
+}
+.item-release{
+    float: left;
 }
 .item-more{
-    margin-top: 5px;
     display: block;
-    text-align: right;
+    float: right;
     color: blue;
 }
 .item-more:hover{
@@ -96,4 +123,52 @@ header{
 }
 .item-add:hover:after{
     content: "Add to cart";
+}
+
+/* Description */
+#product{
+    margin: 10px;
+    width: calc(100% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+#product-details{
+    width: 68%;
+    padding: 30px;
+    display: inline-block;
+}
+#product-details button{
+    display: inline;
+    margin: 5px;
+    margin-left: 15px;
+}
+#product-details p{
+    clear: both;
+    margin: 10px 0;
+}
+#logo{
+    width: 30%;
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid black;
+}
+#logo img{
+    width: 100%;
+}
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+#year{
+    font-size: 0.5em;
+    padding-left: 20px;
+}
+#price{
+    display: block;
+    float: left;
+}
+#buy-now{
+    display: block;
 }
