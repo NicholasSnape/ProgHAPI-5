@@ -52,6 +52,7 @@ footer{
     margin: 5px;
     min-width: 240px;
     border-radius: 5px;
+    width: calc(25% - 10px);
     position: relative;
     float: left;
 }
@@ -111,24 +112,6 @@ footer{
     content: "Add to cart";
 }
 
-@media screen and (min-width: 1200px){
-    body{
-        background-color: black;
-        background-image: url("../images/background.jpg");
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: center top;
-        background-attachment: fixed;
-    }
-    #main-container{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .item{
-        width: calc(25% - 10px);
-    }
-
-}
 
 
 
@@ -193,4 +176,23 @@ label{
 input, select{
     width: 20%;
     display: inline-block;
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-color: black;
+        background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center top;
+        background-attachment: fixed;
+    }
+    #main-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .item{
+        width: calc(25% - 10px);
+    }
+
 }
