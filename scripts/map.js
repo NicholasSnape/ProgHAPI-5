@@ -13,8 +13,7 @@ function success(pos) {
 	let accuracy = pos.coords.accuracy;
 
     //output.innerHTML = `Latitude is ${latitude} and Longitude is ${longitude}. More or less ${accuracy} metres.`;
-    document.getElementById("gmaps").src("https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false");
-
+    document.getElementById("gmaps").setAttribute("src", "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false");
 };
 
 function error(err) {
