@@ -70,7 +70,6 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
- // Handle requests for Google Maps JavaScript API file
   } else if (
     CACHED_URLS.includes(requestURL.href) ||
     CACHED_URLS.includes(requestURL.pathname)
