@@ -8,7 +8,7 @@ var CACHED_URLS = [
     BASE_PATH + 'assets/games.json',
     
     // Images for favicons
-    BASE_PATH + 'assets/favicons/android-chrome-icon-192x192.png',
+    BASE_PATH + 'assets/favicons/android-chrome-192x192.png',
     BASE_PATH + 'assets/favicons/android-chrome-384x384.png',
     BASE_PATH + 'assets/favicons/apple-touch-icon.png',
     BASE_PATH + 'assets/favicons/favicon.ico',
