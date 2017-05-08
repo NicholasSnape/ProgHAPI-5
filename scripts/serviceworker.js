@@ -1,4 +1,4 @@
-var BASE_PATH = 'https://github.com/NicholasSnape/ProgHAPI-5/';
+var BASE_PATH = '/ProgHAPI-5/';
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
     // Our HTML
