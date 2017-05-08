@@ -17,7 +17,7 @@ function success(pos) {
     const img = new Image();
     img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
 
-    console.getElementById("gmaps").appendChild(img);
+    document.getElementById("gmaps").appendChild(img);
 
 };
 
